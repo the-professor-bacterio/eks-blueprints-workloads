@@ -7,7 +7,7 @@ metadata:
     app: skiapp
 spec:
   replicas: 3
-  revisionHistoryLimit: 1
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: skiapp
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: skiapp
-        image: sharepointoscar/skiapp:v1
+        image: sharepointoscar/skiapp:v2
         imagePullPolicy: Always
         ports:
         - name: http
